@@ -1,0 +1,186 @@
+.coin-heading {
+    margin-bottom: 40px;
+
+    .coin-heading-1 {
+        align-items: flex-end;
+
+        h2 {
+            margin: 0 10px;
+            padding: 0;
+
+        }
+
+        h6 {
+            padding: 5px 10px;
+            background-color: rgba(206, 205, 209, 0.122);
+        }
+
+        img {
+            width: 48px;
+        }
+    }
+
+    .coin-heading-2 {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .label {
+            font-size: 14px;
+        }
+
+        .row {
+            h2 {
+                margin: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+
+    .stats {
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        .main-stats {
+            flex: .40;
+            // padding-right: 80px;
+            margin-top: 20px;
+            
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                flex: 1;
+                margin: 20px 0;
+            }
+        }
+
+        .chart {
+            padding-left: 40px;
+            flex: 1;
+
+            .price-container{
+                justify-content: flex-end;
+
+                .changes {
+                    margin-left: 15px;
+                }
+
+                @media screen and (max-width: 600px) {
+                   display: none;
+                }
+                
+            }
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                padding-left: 0;
+                margin: 40px auto;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+
+
+#coin-info{
+    align-items: flex-start;
+    margin-top: 40px;
+    .coin-desc{
+        flex: .7;
+        margin-right: 40px;
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        h3{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 130%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .coin-links{
+        flex: .3;
+        margin-top: 40px;
+        padding: 40px 20px 40px 40px;
+        background-color: rgba(206, 205, 209, 0.122);
+        
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            padding: 0 0 40px 0;
+        }
+
+        h5{
+            margin-bottom: 20px;
+        }
+
+        a{
+            font-size: 16px;
+            margin: 5px 0;
+            padding: 3px 0
+        };
+    }
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+.coin-stats{
+    padding: 25px 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    font-size: 18px;
+
+    .coin-icon {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+
+    .coin-title{
+        margin: 0 8px 0 3px;
+        font-weight: 300;
+    }
+
+    b{
+        font-weight: 500;
+    }
+}
+
+.stats-other {
+    h6{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .other-stats {
+        .coin-stats{
+            padding: 15px 0 5px;
+        }
+    }
+}

@@ -1,18 +1,45 @@
 .nav-container{
-    padding: 20px 5vw;
+    padding: 0 5vw;
+    background-color: rgba(206, 205, 209, 0.06);
+
+    height: 80px;
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
+
+    -webkit-box-shadow: 5px 17px 15px -8px rgba(0,0,0,0.17); 
+box-shadow: 0px 15px 15px 1px rgba(216, 216, 216, 0.17);
+
+    .logo-container{
+        a{
+            .logo{
+                width: 240px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+        
+    }
 
     .menu-desktop {
         
         .menu-item {
             font-size: .9rem;
+            font-weight: 500;
             padding: 0 10px;
             margin: 0 5px;
+            padding-bottom: 3px;
             cursor: pointer;
+
+            &:hover {
+
+                color: #5a5774;
+                border-bottom: 1px solid #5a577413;
+            }
         }
         .menu-item-info {
             padding-right: 0;
@@ -30,7 +57,7 @@
 
         @media screen and (max-width: 900px) {
             display: block;
-            font-size: 2rem;
+            font-size: 1.8rem;
           }
     }
 }
@@ -47,7 +74,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    background-color: chocolate;
+    background-color: #FCFAF6;
     padding: 20px;
 
     .menu-mobile-close{

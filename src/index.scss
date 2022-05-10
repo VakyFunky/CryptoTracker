@@ -1,19 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 :root {
-  --font-base: "DM Sans", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 
-  --primary-color: #032228;
-  --secondary-color: #119285;
-  --bg-color: #fffdf9;
-  --lightGray-color: #e4e4e4;
-  --blue-color: #36A9D3;
-  --yellow-color: #FFC870;
-  --red-color: #FE5D62;
-  --white-color: #ffffff;
+    --primary-color: #232131;
+    --secondary-color: #464352;
+    --bg-color: #fffefb;
+    --lightGray-color: #22707d;
+    --green-color: #0ac2b0;
+    --yellow-color: #FFC870;
+    --red-color: #FE5D62;
+    --white-color: #ffffff;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -29,13 +29,39 @@
 
 html {
     font-size: 20px;
+    font-family: var(--font-base);
+    font-weight: 400;
     color: var(--primary-color);
     scroll-behavior: smooth;
-    font-family: var(--font-base);
+
+    @media screen and (max-width: 900px) {
+        font-size: 18px;
+    }
 }
 
-body{
+body {
     background-color: var(--bg-color);
-    width: 100vw;
 }
 
+#root {
+    height: 100vh;
+}
+
+input {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgb(255, 255, 255);
+
+    &:hover {
+        background-color: var(--white-color);
+        -webkit-box-shadow: 0px 10px 13px -7px #0000002f, 0px 10px 0px -30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 10px 13px -7px #86868619, 0px 10px 0px -30px rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus,
+    &:active {
+        background-color: var(--white-color);
+        -webkit-box-shadow: 0px 10px 13px -7px #0000002f, 0px 10px 0px -30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 10px 13px -7px #86868619, 0px 10px 0px -30px rgba(0, 0, 0, 0.2);
+    }
+
+}

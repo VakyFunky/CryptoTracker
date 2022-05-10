@@ -22,7 +22,8 @@ const App = () => {
           </div>
         </main>
         <footer className='footer'>
-
+        <p> <b>cryptostracker</b></p>
+        <p>All right reserved </p>
         </footer>
     </div>
   )
